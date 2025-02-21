@@ -1,0 +1,12 @@
+times_brasileiros = ("Flamengo", "São Paulo", "Palmeiras", "Grêmio", "Atlético Mineiro", "Internacional", "Santos",
+                    "Vasco da Gama", "Corinthians", "Fluminense")
+print('-'*40)
+print(f'Lista de times brasileiros: {times_brasileiros}')
+print('-'*40)
+print(f'Os 5 primeiros sao: {times_brasileiros[0:5]}')
+print('-'*40)
+print(f'Os ultimos 4 colocados sao: {times_brasileiros[-4:]} ')
+print('-'*40)
+print(f'Os times em ordem alfabetica: {sorted(times_brasileiros)}')
+print('-'*40)
+print(f'O gremio esta na {times_brasileiros.index("Grêmio")}º posição.')
