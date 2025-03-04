@@ -1,8 +1,14 @@
-from tkinter import *
-from tkinter import ttk
-root = Tk()
-frm = ttk.Frame(root, padding=10)
-frm.grid()
-ttk.Label(frm, text="Hello World!").grid(column=10, row=10)
-ttk.Button(frm, text="Quit", command=root.).grid(column=1, row=0)
-root.mainloop()
+lista = []
+pos = 0
+
+for num in range(5):
+    numero = int(input('digite um numero:'))
+    if num == 0 or numero > lista[-1]:
+        lista.append(numero)
+    else:
+        while pos < len(lista):
+            if numero <= lista[pos]:
+                lista.insert(pos, numero)
+                break
+            pos += 1
+print(lista)

@@ -1,4 +1,4 @@
-lista = list()
+lista = []
 
 while True:
     valor = int(input('digite um numero [0 para parar]}:'))
