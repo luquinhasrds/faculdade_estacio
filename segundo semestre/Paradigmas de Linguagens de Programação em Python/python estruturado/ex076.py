@@ -4,4 +4,4 @@ for posicao in range(0, len(dados)):
     if posicao % 2 == 0:
         print(f'{dados[posicao]:.<30}', end='')
     else:
-        print(f'R${dados[posicao]:>7}')
+        print(f'R${dados[posicao]:>50}')
