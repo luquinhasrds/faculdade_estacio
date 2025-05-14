@@ -22,12 +22,15 @@ def listar_pessoas(arquivo='cadastro de pessoas.txt'):
     try:
         with open(arquivo, 'r') as f:
             pessoas = [linha.strip().split(';') for linha in f]
+            if pessoas:
+                cabecalho('Pessoas cadastradas')
+                print(tabulate(pessoas,headers=['Nome', 'Idade'], tablefmt='grid'))
+            else:
+                print(f'{VERMELHO}Nenhuma pessoa cadastrada{RESET}')
     except FileNotFoundError:
         print(f'{VERMELHO}Arquivo não encontrado. Nenhuma pessoa cadastrada ainda.{RESET}')
-    else:
-        cabecalho('Pessoas cadastradas')
-        print(tabulate(pessoas,headers=['Nome', 'Idade'], tablefmt='grid'))
-        
+    except Exception as erro:
+        print(f'{VERMELHO}Erro ao listar pessoas: {erro}{RESET}')
 def limpar_lista(arquivo='cadastro de pessoas.txt'):
     try:
         with open(arquivo, 'r') as f:
@@ -41,5 +44,4 @@ def limpar_lista(arquivo='cadastro de pessoas.txt'):
     except FileNotFoundError:
         print(f'{VERMELHO}ARQUIVO NÃO ENCONTRADO.{RESET}')
     except Exception as erro:
-        print(f'{VERMELHO}ALGO DEU ERRADO.{erro}{RESET}')
-    
+        print(f'{VERMELHO}ALGO DEU ERRADO: {erro}{RESET}')
