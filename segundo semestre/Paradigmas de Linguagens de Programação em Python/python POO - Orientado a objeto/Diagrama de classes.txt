@@ -1,0 +1,37 @@
+Caneta  <- letra maiuscula no comeco, CLASSE
+__________________________________
++modelo <- letra minuscula no comeco porem sem (), entao é um ATRIBUTO
++cor 
+-ponta
+#carga
+#tampada
+__________________________________
++escrever() <- letra minuscula no comeco porem tem (), entao é um METODO
++rabiscar()
++pintar()
+-tampar()
+-destampar()
+
+-------------------------------------------------------------------
++ <- PUBLICO a classe e todas as outras classes
+
+- <- PRIVADO somente a classe atual
+
+# <- PROTEGIDO  a classe atual e todas as suas sub-classes
+-------------------------------------------------------------------
+===============================================================================================================================
+
+Classe Caneta:
+    Publico modelo: Caractere
+    Publico cor: Caractere
+    Privado ponta: Real
+    Protegido carga: Inteiro
+    Protegido tampada: Logico
+    Publico Metodo escrever():
+
+        fimMetodo
+    Publico Metodo rabiscar():
+
+        fimMetodo
+
+    

@@ -1,0 +1,8 @@
+# Cores ANSI para terminal
+VERDE_BRILHANTE = '\033[92m'
+VERDE = '\033[32m'
+VERMELHO_BRILHANTE = '\033[91m'
+VERMELHO = '\033[91m'
+AMARELO = '\033[93m'
+AZUL = '\033[94m'
+RESET = '\033[0m'
