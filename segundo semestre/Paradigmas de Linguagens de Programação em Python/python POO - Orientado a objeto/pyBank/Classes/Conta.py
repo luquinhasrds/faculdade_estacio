@@ -12,7 +12,7 @@ class Conta:
         self.extrato = Extrato()
 
     def depositar(self, valor):
-        self.valor += valor
+        self.saldo += valor
         self.extrato.transacoes.append(['Deposito', valor, datetime.datetime.today()])
 
     def sacar(self, valor):
