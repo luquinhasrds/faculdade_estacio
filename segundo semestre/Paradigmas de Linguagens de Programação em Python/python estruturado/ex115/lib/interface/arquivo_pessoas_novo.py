@@ -17,7 +17,7 @@ class Pessoa:
         
     def __str__(self):
         return f"{self.nome, {self.idade}}"
-    
+
 class Cadastro:
     def __init__(self, arquivo = 'cadastro de pessoas.txt'):
         self.arquivo = arquivo
